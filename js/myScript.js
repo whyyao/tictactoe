@@ -7,13 +7,18 @@ function setup(){
   board=[' ',' ',' ',' ',' ',' ',' ',' ',' '];
   currentPlayer='X';
   gameOver=false;
+  writeDown();
+  document.getElementById("player").innerHTML= currentPlayer;
 
 }
 function changePlayer(){
-  if (currentPlayer == "O")
+  if (currentPlayer == "O"){
     currentPlayer = "X";
+  }
   else
     currentPlayer = "O";
+
+   document.getElementById("player").innerHTML= currentPlayer;
 
 }
  function checkWinning(){
@@ -22,6 +27,7 @@ function changePlayer(){
      if(board[win[i][0]]== board[win[i][1]] && board[win[i][0]]==board[win[i][2]] && board[win[i][0]] != ' ')
      {
        gameOver=true;
+       document.getElementById("player").innerHTML= currentPlayer+" Wins!";
      }
    }
         writeDown();
@@ -44,4 +50,4 @@ function changePlayer(){
    changePlayer();
  }
 
- setup();
+window.onload = setup();
