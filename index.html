@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="script/script.js"> </script>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-  </head>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/myStyle.css">
+  <script type="text/javascript" src="js/myScript.js"> </script>
+</head>
+<body>
+  <div>
+    <table align="center">
+    <tr>
+    <td id="cell1" onClick="clickCell(0)"></td>
+    <td id="cell2" onClick="clickCell(1)"></td>
+    <td id="cell3" onClick="clickCell(2)"></td>
+    </tr>
+    <tr>
+    <td id="cell4" onClick="clickCell(3)"></td>
+    <td id="cell5" onClick="clickCell(4)"></td>
+    <td id="cell6" onClick="clickCell(5)"></td>
+    </tr>
+    <tr>
+    <td id="cell7" onClick="clickCell(6)"></td>
+    <td id="cell8" onClick="clickCell(7)"></td>
+    <td id="cell9" onClick="clickCell(8)"></td>
+    </tr>
+    </table>
 
-  <body>
-    <div class="container">
-      <h1>SIMPLE TIC TAC TOE</h1>
-      <div class='tictactoe'>
-        <div class="board">
-          <div class="cell 0" onClick="setCell(0)"></div>
-          <div class="cell 1" onClick="setCell(1)">></div>
-          <div class="cell 2" onClick="setCell(2)"></div>
-          <div class="cell 3" onClick="setCell(3)"></div>
-          <div class="cell 4" onClick="setCell(4)"></div>
-          <div class="cell 5" onClick="setCell(5)"></div>
-          <div class="cell 6" onClick="setCell(6)"></div>
-          <div class="cell 7" onClick="setCell(7)"></div>
-          <div class="cell 8" onClick="setCell(8)"></div>
-        </div>
-        <div class="options">
-          <div class="playerText"></div>
-          <button class="restart" onClick="init()">Restart</button>
-        </div>
-      </div>
-      <footer>See code on <a href="http://github.com/AtActionPark/odin_js_tictactoe">Github</a></footer>
-    </div>
-  </body>
+
+
+
+  </div>
+
+</body>
 </html>
