@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="css/myStyle.css">
-</head>
-<body>
-  <div>
-    <table align="center">
-    <tr>
-    <td class="cell"></td>
-    <td class="cell"></td>
-    <td class="cell"></td>
-    </tr>
-    <tr>
-    <td class="cell"></td>
-    <td class="cell"></td>
-    <td class="cell"></td>
-    </tr>
-    <tr>
-    <td class="cell"></td>
-    <td class="cell"></td>
-    <td class="cell"></td>
-    </tr>
-    </table>
+<html lang="en">
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script/script.js"> </script>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  </head>
 
-
-
-
-  </div>
-
-</body>
+  <body>
+    <div class="container">
+      <h1>SIMPLE TIC TAC TOE</h1>
+      <div class='tictactoe'>
+        <div class="board">
+          <div class="cell 0" onClick="setCell(0)"></div>
+          <div class="cell 1" onClick="setCell(1)">></div>
+          <div class="cell 2" onClick="setCell(2)"></div>
+          <div class="cell 3" onClick="setCell(3)"></div>
+          <div class="cell 4" onClick="setCell(4)"></div>
+          <div class="cell 5" onClick="setCell(5)"></div>
+          <div class="cell 6" onClick="setCell(6)"></div>
+          <div class="cell 7" onClick="setCell(7)"></div>
+          <div class="cell 8" onClick="setCell(8)"></div>
+        </div>
+        <div class="options">
+          <div class="playerText"></div>
+          <button class="restart" onClick="init()">Restart</button>
+        </div>
+      </div>
+      <footer>See code on <a href="http://github.com/AtActionPark/odin_js_tictactoe">Github</a></footer>
+    </div>
+  </body>
 </html>
