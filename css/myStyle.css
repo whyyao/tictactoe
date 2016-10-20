@@ -1,8 +1,13 @@
 td{
   border: 1px solid black;
   width:100px;
-  height:100px
+  height:100px;
+  text-align: center;
+  font-size:300%;
 }
 table{
   border-collapse: collapse;
+}
+h3{
+  text-align: center;
 }
